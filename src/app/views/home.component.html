@@ -1,0 +1,21 @@
+<div class="currency-table-header">
+
+  <div class="currency-table-header-item">Currency</div>
+  <div class="currency-table-header-item">Spot</div>
+  <div class="currency-table-header-item">Chart</div>
+
+</div>
+
+<div class="currency-table">
+
+  <div class="currency-table-item-row"  *ngFor="let cur of datum.initList?.dataSet; let i = index;">
+    <div class="currency-table-item">{{cur.currency}}</div>
+    <div class="currency-table-item">{{cur.spot}}</div>
+    <div
+      class="currency-table-item">
+      <a title="{{cur.currency}} - {{datum.curBase}}" [routerLink]="['/hist', cur.currency]">
+        📈</a>
+    </div>
+  </div>
+
+</div>

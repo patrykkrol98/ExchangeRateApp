@@ -1,0 +1,74 @@
+.currency-table {
+    width: 55vw;
+    margin: auto;
+    overflow-x: auto;
+    height: 75vh;
+    min-height: 69vh;
+}
+.currency-table-item-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
+    font-size: .92em;
+}
+
+.currency-table-item {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: .1em .1em;
+    min-height: 4vh;
+    color: darkgreen;
+    background-color: cornsilk;
+}
+
+.currency-table-header {
+    width: 55vw;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    min-height: 6vh;
+    background-color: rgba(0,100,0, .69);
+    border-radius: .25em;
+    color: snow;
+    font-weight: 600;
+}
+.currency-table-header-item {
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+}
+/* scrollbar styling */
+/* width */
+::-webkit-scrollbar {
+    width: .51rem;
+    border-radius: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 100, 0, .11);
+    border-radius: 9px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 100, 0, .33);
+    border-radius: 9px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 100, 0, .69);
+    border-radius: 9px;
+}
+
+/* scrollbar styling */

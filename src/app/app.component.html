@@ -1,0 +1,26 @@
+<div class="page-layout">
+
+  <div class="base">
+    <select
+      id="base-currency" name="selectedCurrency"
+      (change)="onOptionSelected()"
+      [(ngModel)]="selectedCurrency">
+      <option *ngFor="let cur of baseSet;"
+              [value]="cur">{{cur}}</option>
+    </select>
+  </div>
+
+  <div class="page-area">
+
+    <div class="nav">
+
+      <button [routerLink]="['/home', 'EUR']" class="nav-item">Latest rates</button>
+
+    </div>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
